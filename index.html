@@ -22,25 +22,49 @@ Select TWO Additional Features to Add
   <meta charset="utf-8">
   <style>
 
-    body, html{
-      animation: colorChange 3s infinite alternate;
-    }
-    
-    @keyframes colorChange{
-      0%{background-color: #FF0000;}
-      50%{background-color: #FF8A8A;}
-      100%{background-color: #ffffff;}
-    }
+   body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJhJmw-hdy-2frGZJ010GGYp5JThTw1Ow9Q&s" ) 
+   }
 
     h1 {
-      color: #52d652;
+      color: rgba(221, 59, 59, 0.897);
+     
+  
     }
 
+  .Christmas{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
     .flip-card {
-  background-color:#52d652 ;
+  background-color:rgba(206, 164, 164, 0.822) ;
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  border: 3px solid rgb(35, 119, 35);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .flip-card-inner {
@@ -76,15 +100,25 @@ Select TWO Additional Features to Add
   transform: rotateY(180deg);
 }
 
-.Christmas {
-  display: flex;
+
+
+p {
+  color: rgba(221, 59, 59, 0.897);
+  background-color: white;
+}
+
+.first {
+  color: green;
+  font-style: italic;
+  text-decoration: underline;
 }
   </style>
 </head>
 <body>
   
-<h1>Jacobs VERY Brief Christmas List</h1>
- <div class="Christmas">
+<h1 class="Christmas">Jacobs VERY Brief Christmas List 🤍💗</h1>
+<Jacob (me) has so many more things on my very long list but these 3 items are just the ones that I live most and I will explain why
+ <div>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -96,7 +130,9 @@ Select TWO Additional Features to Add
     </div>
   </div>
 </div>
-
+<p>
+  <spam class="first">The first Item is called the Wales Bonner Pony Hair Sambas.</spam> I asked for these because they would match with so many of my very cute outfits. I would also like these shoes because these are a type of shoe that I can wear with almost everything. I dont know if I will get them because they are very very VERY expensive but it is worth a try😄. 
+</p>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -104,12 +140,13 @@ Select TWO Additional Features to Add
     </div>
     <div class="flip-card-back">
       <h1>New Macbook Pro 14 inch</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
+      
     </div>
   </div>
 </div>
-
+<p>
+  <span class="first">The next item on my christmas list is a Macbook Pro.</span> I asked for this item because the current camera on my computer does nto work. I went to go get it fixed, they fixed it and then it broke again whihc really had me so angry. I also just need a new one for college because my current computer is 6 years old. This is one of my main gifts😊. 
+</p>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -117,13 +154,14 @@ Select TWO Additional Features to Add
     </div>
     <div class="flip-card-back">
       <h1>Ralph Lauren Sweater </h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
+    
     </div>
   </div>
 </div>
 </div>
-
+<p>
+  <span class="first">This last item is a Ralph Lauren Sweater.</span> I think that this sweater is one of the cutest things that I have ever seen. This item is not a big must but I would really love to have it. I feel like this item would really give me a whole updated wardrobe I would be able to make such cute outfits with all these new cloths that I asked for🤪!
+</p>
 
 </body>
 </html>
